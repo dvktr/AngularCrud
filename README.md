@@ -1,27 +1,75 @@
-# Angular16CRUD
+# Angular v16 Employee CRUD Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+Este é um projeto Angular v16 para um CRUD (Create, Read, Update, Delete) de funcionários. O projeto utiliza o JSON Server como banco de dados para simular operações de backend.
 
-## Development server
+## Pré-requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de começar, verifique se você atende aos seguintes requisitos:
 
-## Code scaffolding
+- Node.js e npm instalados na sua máquina.
+- Angular CLI instalado globalmente. Caso não tenha, você pode instalá-lo utilizando o seguinte comando:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install -g @angular/cli
+```
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para instalar as dependências do projeto, siga estas etapas:
 
-## Running unit tests
+1. Clone este repositório:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/dvktr/AngularCrud.git
+```
 
-## Running end-to-end tests
+2. Acesse o diretório do projeto:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+cd AngularCrud
+```
 
-## Further help
+3. Instale as dependências:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+```
+
+## Executando o Projeto
+
+Para executar o projeto, siga estas etapas:
+
+1. Inicie o servidor JSON Server:
+
+```bash
+json-server --watch db.json
+```
+
+Isso iniciará o servidor JSON na porta padrão (3000) e usará o arquivo `db.json` como banco de dados.
+
+2. Inicie o servidor de desenvolvimento do Angular:
+
+```bash
+ng serve
+```
+
+O aplicativo estará disponível em `http://localhost:4200/`.
+
+## Utilização
+
+O aplicativo permite executar as seguintes operações CRUD em funcionários:
+
+- **Create:** Adicione novos funcionários fornecendo os detalhes necessários.
+- **Read:** Visualize todos os funcionários cadastrados.
+- **Update:** Atualize os detalhes de um funcionário existente.
+- **Delete:** Remova um funcionário da lista.
+
+## Licença
+
+Distribuído sob a licença MIT. Consulte `LICENSE` para obter mais informações.
+
+## Contato
+
+Se você tiver dúvidas sobre o projeto, sinta-se à vontade para entrar em contato através do email [victormendes04012004@gmail.com](victormendes04012004@gmail.com). 
+
+Você também pode encontrar mais projetos em [meu GitHub](https://github.com/dvktr).
