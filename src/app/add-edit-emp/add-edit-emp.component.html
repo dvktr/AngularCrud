@@ -1,0 +1,59 @@
+<div mat-dialog-title>Employee Add</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="" type="text" value="" formControlName="firstname"/>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="" type="text" value="" formControlName="lastname"/>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="email@email.com" value="" formControlName="email"/>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Birthday</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date"/>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-label><b>Gender</b></mat-label>
+      <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="others">Others</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Education</mat-label>
+        <mat-select formControlName="education">
+          <mat-option *ngFor="let edu of education" [value]="edu">
+            {{ edu }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Company</mat-label>
+        <input matInput placeholder="" type="text" value="" formControlName="company"/>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button color="warn">Cancel</button>
+    <button mat-raised-button color="primary">Save</button>
+  </div>
+</form>
