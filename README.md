@@ -1,7 +1,6 @@
 # Angular v16 Employee CRUD Project
 
 Este é um projeto Angular v16 para um CRUD (Create, Read, Update, Delete) de funcionários. O projeto utiliza o JSON Server como banco de dados para simular operações de backend.
-//ghp_mQcucw8TOWTNLLvJWw1FIOYfAG2xu14OHxg/z
 ## Pré-requisitos
 
 Antes de começar, verifique se você atende aos seguintes requisitos:
