@@ -72,31 +72,3 @@ Distribuído sob a licença MIT. Consulte `LICENSE` para obter mais informaçõe
 Se você tiver dúvidas sobre o projeto, sinta-se à vontade para entrar em contato através do email [victormendes04012004@gmail.com](victormendes04012004@gmail.com). 
 
 Você também pode encontrar mais projetos em [meu GitHub](https://github.com/dvktr).
-
-DJANGO_SECRET_KEY=a6w0f)*^*exjnb_^o&heu3bx=f(mcd1%mpcvbac-1j&+0)za2l
-DATABASE_NAME=alon_test
-DATABASE_USER=postgres
-DATABASE_PASSWORD=postgres
-DATABASE_HOST=localhost
-DATABASE_PORT=5432
-
-GOOGLE_CLIENT_ID=''
-GOOGLE_CLIENT_SECRET=''
-
-NO_EXP_TEST_TOKEN=''
-RSA_PRIVATE_KEY=''
-
-EMAIL_HOST=''
-EMAIL_PORT=
-EMAIL_HOST_USER=''
-EMAIL_HOST_PASSWORD=''
-
-SERVER_REDIRECT='http://127.0.0.1'
-SERVER_REDIRECT_PORT='8000'
-
-SERVER_PORT='8000'
-
-SSH_PRIV_KEY=
-SSH_PUB_KEY=
-
-WKHTMLTOPDF_PATH=
